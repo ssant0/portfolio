@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Manuel Samaniego | Full-stack Developer</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+  </head>
+  <body class="bg-black">
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    background-color: #f1f2f5; /* TODO change to other for production */
+  }
+</style>

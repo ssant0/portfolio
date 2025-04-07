@@ -1,0 +1,36 @@
+---
+
+
+---
+
+
+<nav class="relative z-10 flex justify-around py-8 mx-16 max-lg:justify-center max-lg:gap-0 max-md:mx-0">
+  <div class="max-lg:hidden"></div>
+  <div class="ms-auto max-lg:ms-0 flex items-center justify-between font-lora text-xl gap-6 max-[500px]:text-lg max-[500px]:gap-3">
+    <button class="lb active cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent">Inicio</button>
+    <button class="lb cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent">Proyectos</button>
+    <button class="lb cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent">Blog</button>
+  </div>
+</nav>
+
+<script>
+
+  const links = document.querySelectorAll('.lb');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+</script>
+
+
+<style>
+  .lb.active {
+    border-color: #2d5d54;
+    color: #2d5d54;
+  }
+</style>
+
