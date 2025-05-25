@@ -1,18 +1,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-  @font-face {
-    font-family: "Codec Pro";
-    src:
-      url("/fonts/codec-pro/CodecPro-Regular.woff2") format("woff2"),
-      url("/fonts/codec-pro/CodecPro-Regular.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  .font-codec {
-    font-family: "Codec Pro", sans-serif;
+  .codec-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
   }
 
   .font-lora {

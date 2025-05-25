@@ -11,6 +11,8 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Manuel Samaniego | Full-stack Developer</title>
     <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate_config.css" />
   </head>
   <body class="bg-black">
     <slot />
@@ -24,3 +26,8 @@ import "../styles/global.css";
     background-color: #f1f2f5; /* TODO change to other for production */
   }
 </style>
+
+<script>
+  import { startAnimateOnView } from '../scripts/animate-on-view';
+  startAnimateOnView();
+</script>
