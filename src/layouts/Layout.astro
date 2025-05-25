@@ -1,5 +1,19 @@
 ---
 import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  metaTitle?: string;
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title,
+  metaTitle,
+  description,
+  keywords
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -9,21 +23,27 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Manuel Samaniego | Full-stack Developer</title>
+    <title>{title}</title>
+    <meta name="title" content={metaTitle} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/css/animate_config.css" />
   </head>
-  <body class="bg-black">
+  <body>
     <slot />
   </body>
 </html>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
   html,
   body {
-    margin: 0;
-    background-color: #f1f2f5; /* TODO change to other for production */
+    background-color: #f1f2f5;
   }
 </style>
 
