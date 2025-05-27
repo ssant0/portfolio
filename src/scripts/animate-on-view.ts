@@ -7,7 +7,7 @@
  *  - Add `data-aov-animation` attribute with the animate.css classname (e.g., 'animate__fadeIn').
  * @param {IntersectionObserverInit} [options] - Optional observer settings: root, rootMargin, threshold.
  */
-export const startAnimateOnView = (options = { root: null, rootMargin: '0px', threshold: 0.1 }) => {
+export const startAnimateOnView = (options = { root: null, rootMargin: '40px 0px 0px 0px', threshold: 0.0 }) => {
   const elements = document.querySelectorAll<HTMLElement>('.animate-on-view');
   if (!elements.length) return;
 
