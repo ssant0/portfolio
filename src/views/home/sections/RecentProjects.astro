@@ -1,10 +1,10 @@
 ---
-import ProyectCard from "./proyect-card.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 
-import cucii from "../../assets/img/clients/cucii.png";
-import labstudiomedia from "../../assets/img/clients/labstudiomedia.png";
-import cocinasmodulares from "../../assets/img/clients/cocinasmodulares.png";
-import cybercafe10m from "../../assets/img/clients/cybercafe10m.png";
+import cucii from "../../../assets/img/clients/cucii.png";
+import labstudiomedia from "../../../assets/img/clients/labstudiomedia.png";
+import cocinasmodulares from "../../../assets/img/clients/cocinasmodulares.png";
+import cybercafe10m from "../../../assets/img/clients/cybercafe10m.png";
 ---
 
 <div class="flex flex-col items-center justify-center mt-72">
@@ -20,25 +20,25 @@ import cybercafe10m from "../../assets/img/clients/cybercafe10m.png";
       class="w-[1180px] flex items-center justify-start flex-wrap gap-5
     max-[1225px]:w-[780px] max-[820px]:w-[580px] max-[820px]:justify-center max-[660px]:w-full"
     >
-      <ProyectCard
+      <ProjectCard
         title="cucii.mx"
         description="Cucii es una universidad privada con sede en Sinaloa que ofrece programas de formación profesional en áreas como educación, economía y derecho."
         image={cucii.src}
         link="https://cucii.mx/"
       />
-      <ProyectCard
+      <ProjectCard
         title="labstudiomedia.com"
         description="Labstudiomedia es una agencia de marketing digital que ofrece servicios de Desarrollo web, fotografía y diseño gráfico."
         image={labstudiomedia.src}
         link="https://labstudiomedia.com/"
       />
-      <ProyectCard
+      <ProjectCard
         title="cocinasmodulares.com.mx"
         description="Cocinas Modulares es una empresa que ofrece servicios de diseño y fabricación de cocinas modulares para hogares y negocios."
         image={cocinasmodulares.src}
         link="https://cocinasmodulares.mx/"
       />
-      <ProyectCard
+      <ProjectCard
         title="cybercafe10m.com"
         description="Cybercafe10m es un cybercafe que ofrece servicios de internet, ayuda en documentación y orientación en trámites para los usuarios."
         image={cybercafe10m.src}
