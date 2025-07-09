@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.on-scroll-nav {
+  @apply shadow-sm rounded-2xl max-[660px]:rounded-none max-[660px]:shadow-none;
+}
