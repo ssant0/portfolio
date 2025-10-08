@@ -1,11 +1,12 @@
 ---
 import "../styles/global.css";
+import Footer from "../views/shared/Footer.astro";
 
 interface Props {
-  title?: string;
-  metaTitle?: string;
-  description?: string;
-  keywords?: string;
+  title: string;
+  metaTitle: string;
+  description: string;
+  keywords: string;
 }
 
 const {
@@ -32,8 +33,9 @@ const {
     <link rel="stylesheet" href="/css/animate_config.css" />
     <link rel="canonical" href="https://www.manuelsamaniego.com.mx/">
   </head>
-  <body>
+  <body class="rubik">
     <slot />
+    <Footer />
   </body>
 </html>
 

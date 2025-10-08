@@ -47,3 +47,24 @@ import cybercafe10m from "../../../assets/img/clients/cybercafe10m.png";
     </div>
   </div>
 </div>
+
+
+<script>
+
+  const allCards = document.querySelectorAll('.card-project');
+
+  allCards.forEach(card => {
+    const img = card.children[0] as HTMLImageElement;
+    const btn = card.children[1].children[2];
+    
+    btn.addEventListener('mouseover', () => {
+      img.style.filter = 'grayscale(0) contrast(100%)';
+    })
+
+    btn.addEventListener('mouseout', () => {
+      img.style.filter = 'grayscale(100%) contrast(80%)';
+    })
+  })
+
+
+</script>

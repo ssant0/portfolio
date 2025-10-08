@@ -16,31 +16,28 @@ const {
   link,
 } = Astro.props;
 
+const cleanTitle = title.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
+const id = 'card-' + cleanTitle;
+
 ---
 
 <div
-class="card-proyect overflow-clip w-[380px] flex flex-col justify-center bg-white rounded-2xl animate__fast animate-on-view animation-forwards animate__animated
-max-[820px]:w-[480px] max-[524px]:w-[390px] max-[440px]:w-[360px] max-[392px]:w-[320px] max-[348px]:w-[280px]" data-aov-animation="animate__zoomIn">
+  id={id}
+  class="card-project overflow-clip w-[380px] flex flex-col justify-center bg-white rounded-2xl animate__fast animate-on-view animation-forwards animate__animated
+  max-[820px]:w-[480px] max-[524px]:w-[390px] max-[440px]:w-[360px] max-[392px]:w-[320px] max-[348px]:w-[280px]" data-aov-animation="animate__zoomIn">
   <Image src={image} alt={`Imagen del proyecto: ${title}`} class="rounded-t-2xl h-[260px] object-cover" inferSize />
   <div class="px-4 py-3 flex flex-col">
     <h2 class="text-xl font-medium m-0 text-start">{title}</h2>
     <p class="text-base m-0 h-[90px]">{description}</p>
-    <a href={link} target="_blank" class="mt-8 w-full text-center text-lg font-medium lets-talk font-lora rounded-full bg-[#2d5d54] hover:bg-[#3e8b7d] transition-colors text-white px-4 py-2">
-      Visitar
+    <a href={`/projects/${cleanTitle}`} target="_self" class="mt-8 w-full text-center text-lg font-medium lets-talk font-lora rounded-full bg-[#2d5d54] hover:bg-[#3e8b7d] transition-colors text-white px-4 py-2">
+      Ver mas...
     </a>
   </div>
 </div>
 
 <style>
-  .card-proyect img {
+  .card-project img {
     transition: all 0.3s ease;
     filter: grayscale(100%) contrast(80%);
   }
-
-  .card-proyect:hover img {
-    filter: grayscale(0) contrast(100%);
-  }
 </style>
-
-
-
