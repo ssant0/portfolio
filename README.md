@@ -1,48 +1,72 @@
-# Astro Starter Kit: Basics
+# Portafolio Personal de Manuel Samaniego
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Hola! 👋 Este es el repositorio del código fuente de mi portafolio web personal. Aquí muestro mis proyectos, habilidades y un poco sobre mi pasión por el desarrollo y la automatización.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+**Puedes ver el sitio en vivo aquí: [www.manuelsamaniego.com.mx](https://www.manuelsamaniego.com.mx)**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Stack Tecnológico del Proyecto
 
-## 🚀 Project Structure
+Este sitio fue construido utilizando tecnologías modernas, enfocándome en el rendimiento y la experiencia de desarrollo:
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Framework:** [Astro](https://astro.build/)
+- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+- **Estilos y Animaciones:** [Animate.css](https://animate.style/)
+- **Despliegue:** [Cloudflare Pages](https://pages.cloudflare.com/)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Instalación y Uso Local
 
-## 🧞 Commands
+Si quieres explorar el código o ejecutarlo en tu propia máquina, sigue estos sencillos pasos:
 
-All commands are run from the root of the project, from a terminal:
+1. **Clona el repositorio:**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+    ```bash
+    git clone [https://github.com/ssant0/portfolio.git](https://github.com/ssant0/portfolio.git)
+    ```
 
-## 👀 Want to learn more?
+2. **Navega al directorio del proyecto:**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+    ```bash
+    cd portfolio
+    ```
+
+3. **Instala las dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Ejecuta el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+¡Y listo! Abre [http://localhost:4321](http://localhost:4321) en tu navegador para ver el proyecto en acción.
+
+---
+
+## 👨‍💻 Sobre Mí
+
+Soy **Manuel Samaniego**, un **Desarrollador Web** con una gran pasión por la automatización. Me encanta crear sistemas; soy una persona que busca tener un sistema para todo lo que hace. En mi trabajo, he creado 5 sistemas dedicados a automatizar mis propias tareas y responsabilidades para optimizar el flujo de trabajo.
+
+### Tecnologías que domino
+
+- [x] Java
+- [x] Spring Boot
+- [x] Angular
+- [x] Astro
+- [x] TypeScript
+- [x] PostgreSQL
+
+---
+
+## 📫 Contacto
+
+Conectemos y hablemos de tecnología, proyectos o lo que se te ocurra.
+
+- **LinkedIn:** [Manuel Samaniego](https://www.linkedin.com/in/manuel-samaniego/)
+- **Instagram:** [@ssamanieg0\_](https://www.instagram.com/ssamanieg0_/)
+- **Email:** [manuel.s@labstudiomedia.com](mailto:manuel.s@labstudiomedia.com)
