@@ -59,6 +59,19 @@ import "../../styles/nav.css";
       } else {
         linksContainer.classList.remove("on-scroll-nav");
       }
+
+      const scrollPos = window.scrollY + 100;
+
+      if (contact && scrollPos > contact.offsetTop) {
+        links.forEach(l => l.classList.remove('active'));
+        links[2].classList.add('active');
+      } else if (recentProjects && scrollPos > recentProjects.offsetTop) {
+        links.forEach(l => l.classList.remove('active'));
+        links[1].classList.add('active');
+      } else {
+        links.forEach(l => l.classList.remove('active'));
+        links[0].classList.add('active');
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
