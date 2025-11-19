@@ -49,7 +49,7 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
     
     <div class="flex flex-wrap mt-4 animate__animated animate__fadeIn">
 
-      <h2 class="text-md inline max-[896px]:w-full max-[896px]:mb-2">Tecnologías utilizadas:</h2>
+      <h2 class="text-md inline max-[896px]:w-full max-[896px]:mb-2 mr-2">Tecnologías utilizadas:</h2>
       <div class="flex flex-wrap items-center gap-2">
         {
           technologies.map((tech) => (
@@ -68,7 +68,7 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
     <Image
       src={image}
       alt={`Imagen del proyecto ${title}`}
-      class="rounded-lg shadow-lg w-full h-auto transition-transform duration-300 hover:scale-105 scale-100 animate__animated animate__fadeIn animate__delay-1s"
+      class="rounded-lg shadow-lg w-full h-auto animate__animated animate__fadeIn animate__delay-1s"
     />
   </a>
 
