@@ -9,23 +9,26 @@
     id="links-container"
     class="bg-[#f1f2f5]
     py-3 px-5
-    rounded-2xl shadow flex items-center justify-between text-xl gap-12 max-[660px]:text-lg max-[660px]:gap-3 max-[382px]:text-base transition-all duration-300
+    rounded-2xl shadow flex items-center justify-center text-xl gap-8 max-[660px]:text-lg max-[660px]:gap-3 max-[382px]:text-base transition-all duration-300
     max-[660px]:w-full max-[660px]:justify-center max-[660px]:rounded-none max-[480px]:text-base"
   >
     <button
       class="animate__animated animate__zoomIn animate__fast lb active cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent max-[382px]:px-2 max-[382px]:py-0.5
+      w-34
       max-[660px]:w-32
       max-[480px]:w-28"
       >Inicio</button
     >
     <button
       class="animate__animated animate__zoomIn animate__delay-1s animate__fast lb cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent max-[382px]:px-2 max-[382px]:py-0.5
+      w-34
       max-[660px]:w-32
       max-[480px]:w-28"
       >Proyectos</button
     >
     <button
       class="animate__animated animate__zoomIn animate__delay-2s animate__fast lb cursor-pointer px-4 py-1 rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent max-[382px]:px-2 max-[382px]:py-0.5 text-center
+      w-34
       max-[660px]:w-32
       max-[480px]:w-28"
       >Contacto</button
@@ -88,7 +91,7 @@
     });
   };
 
-  myScroll(links[0], intro!);
+  myScroll(links[0], document.body);
   myScroll(links[1], recentProjects!);
   myScroll(links[2], contact!);
 </script>
