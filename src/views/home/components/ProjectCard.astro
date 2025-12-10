@@ -1,6 +1,5 @@
 ---
-import { Image } from 'astro:assets';
-
+import { Image } from "astro:assets";
 
 interface Props {
   title: string;
@@ -9,28 +8,44 @@ interface Props {
   link: string;
 }
 
-const {
-  title,
-  description,
-  image,
-  link,
-} = Astro.props;
+const { title, description, image, link } = Astro.props;
 
-const cleanTitle = title.replaceAll(' ', '-').replaceAll('.', '-').toLowerCase();
-const id = 'card-' + cleanTitle;
-
+const cleanTitle = title
+  .replaceAll(" ", "-")
+  .replaceAll(".", "-")
+  .toLowerCase();
+const id = "card-" + cleanTitle;
 ---
 
 <div
   id={id}
-  class="card-project overflow-clip w-[380px] flex flex-col justify-center bg-white rounded-2xl animate__fast animate-on-view animation-forwards animate__animated
-  max-[820px]:w-[480px] max-[524px]:w-[390px] max-[440px]:w-[360px] max-[392px]:w-[320px] max-[348px]:w-[280px]" data-aov-animation="animate__zoomIn">
-  <Image src={image} alt={`Imagen del proyecto: ${title}`} class="rounded-t-2xl h-[260px] object-cover" inferSize />
-  <div class="px-4 py-3 flex flex-col">
-    <h2 class="text-xl font-medium m-0 text-start">{title}</h2>
-    <p class="text-base m-0 h-[90px]">{description}</p>
-    <a href={`/projects/${cleanTitle}`} target="_self" class="mt-8 w-full text-center text-lg font-medium lets-talk font-lora rounded-full bg-[#2d5d54] hover:bg-[#3e8b7d] transition-colors text-white px-4 py-2">
-      Ver mas...
+  class="card-project overflow-clip w-[820px] flex flex-row bg-white rounded-2xl animate__fast animate-on-view animation-forwards animate__animated
+  max-[850px]:flex-col
+  max-[850px]:w-[620px]
+  max-[660px]:w-[calc(100%-60px)]"
+  data-aov-animation="animate__zoomIn"
+>
+  <Image
+    src={image}
+    alt={`Imagen del proyecto: ${title}`}
+    class="rounded-l-2xl w-full h-auto object-cover max-[850px]:rounded-tl-2xl max-[850px]:rounded-none"
+    inferSize
+  />
+  <div
+    class="px-6 py-8 flex flex-col justify-center w-full max-[660px]:px-4 max-[660px]:py-6"
+  >
+    <h2 class="text-2xl font-medium m-0 text-start max-[660px]:text-xl">
+      {title}
+    </h2>
+    <p class="text-lg mt-2 max-[660px]:text-base max-[550px]:text-sm">
+      {description}
+    </p>
+    <a
+      href={`/projects/${cleanTitle}`}
+      target="_self"
+      class="mt-8 w-fit text-base max-[850px]:text-lg max-[660px]:mt-4 max-[550px]:text-base font-normal lets-talk font-lora rounded-xl bg-[#2d5d54] hover:bg-[#3e8b7d] transition-colors text-white px-6 py-2"
+    >
+      Ver proyecto
     </a>
   </div>
 </div>

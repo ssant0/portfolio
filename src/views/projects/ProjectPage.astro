@@ -22,34 +22,37 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
     <div
       class="w-full flex justify-end bg-[#f1f2f5] py-3 ms-auto text-xl max-[660px]:text-lg max-[382px]:text-base transition-all duration-300 mb-8"
     >
-    <a
-          href="/"
-          target="_self"
-          class="flex items-center gap-2 animate__animated animate__zoomIn animate__delay-2s animate__fast cursor-pointer rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent max-[382px]:px-2 max-[382px]:py-0.5"
-          >Volver al inicio
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-left-short w-8 h-8"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
-            ></path>
-          </svg>
-        </a>
+      <a
+        href="/"
+        target="_self"
+        class="flex items-center gap-2 animate__animated animate__zoomIn animate__delay-2s animate__fast cursor-pointer rounded-xl hover:text-[#2d5d54] transition-colors duration-300 border-2 border-solid border-transparent max-[382px]:px-2 max-[382px]:py-0.5"
+        >Volver al inicio
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-left-short w-8 h-8"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
+          ></path>
+        </svg>
+      </a>
     </div>
 
-    <h1 class="text-5xl max-[640px]:text-4xl max-[500px]:text-3xl font-medium mb-4 animate__animated animate__fadeIn">
+    <h1
+      class="text-5xl max-[640px]:text-4xl max-[500px]:text-3xl font-medium mb-4 animate__animated animate__fadeIn"
+    >
       {title}
     </h1>
-    
-    <div class="flex flex-wrap mt-4 animate__animated animate__fadeIn">
 
-      <h2 class="text-md inline max-[896px]:w-full max-[896px]:mb-2 mr-2">Tecnologías utilizadas:</h2>
+    <div class="flex flex-wrap mt-4 animate__animated animate__fadeIn">
+      <h2 class="text-md inline max-[896px]:w-full max-[896px]:mb-2 mr-2">
+        Tecnologías utilizadas:
+      </h2>
       <div class="flex flex-wrap items-center gap-2">
         {
           technologies.map((tech) => (
@@ -59,9 +62,7 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
           ))
         }
       </div>
-
     </div>
-
   </header>
 
   <a href={liveLink} target="_blank" rel="noopener noreferrer">
@@ -74,7 +75,9 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
 
   <main>
     <section class="my-8">
-      <div class="w-full flex justify-start gap-5 max-[640px]:justify-center max-[500px]:flex-col max-[500px]:items-center max-[500px]:gap-2">
+      <div
+        class="w-full flex justify-start gap-5 max-[640px]:justify-center max-[500px]:flex-col max-[500px]:items-center max-[500px]:gap-2"
+      >
         <a
           href={liveLink}
           target="_blank"
@@ -83,7 +86,7 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
         >
           <span
             class="text-xl relative bottom-0.5 max-[660px]:text-lg max-[382px]:text-base"
-            >Ver proyecto
+            >Visitar proyecto
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +135,11 @@ const { title, longDescription, image, liveLink, repoLink, technologies } =
       >
         Sobre el proyecto
       </h2>
-      <p class="text-lg max-[640px]:text-base leading-relaxed animate__animated animate__fadeIn animate__delay-1s">{longDescription}</p>
+      <p
+        class="text-lg max-[640px]:text-base leading-relaxed animate__animated animate__fadeIn animate__delay-1s"
+      >
+        {longDescription}
+      </p>
     </section>
   </main>
 </div>

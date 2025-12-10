@@ -1,5 +1,5 @@
 ---
-
+import { socialLinks } from "../../../data/socialLinks";
 ---
 
 <div
@@ -36,7 +36,7 @@
     <p class="text-2xl max-[660px]:text-xl max-[382px]:text-lg">Redes:</p>
     <div class="flex gap-2 media-links">
       <a
-        href="https://www.instagram.com/ssamanieg0_/"
+        href={socialLinks.instagram}
         target="_blank"
         class="transition-colors duration-300 w-[50px] h-[50px] max-[800px]:w-[40px] max-[800px]:h-[40px] flex items-center justify-center border-solid rounded-xl border-[#000000] border-2 p-2 max-[382px]:w-[35px] max-[382px]:h-[35px]"
       >
@@ -54,7 +54,7 @@
       </a>
 
       <a
-        href="mailto:manuel.s@labstudiomedia.com"
+        href={`mailto:${socialLinks.email}`}
         target="_blank"
         class="transition-colors duration-300 w-[50px] h-[50px] max-[800px]:w-[40px] max-[800px]:h-[40px] flex items-center justify-center border-solid rounded-xl border-[#000000] border-2 p-2 max-[382px]:w-[35px] max-[382px]:h-[35px]"
       >
@@ -71,7 +71,7 @@
       </a>
 
       <a
-        href="https://www.linkedin.com/in/manuel-samaniego/"
+        href={socialLinks.linkedin}
         target="_blank"
         class="transition-colors duration-300 w-[50px] h-[50px] max-[800px]:w-[40px] max-[800px]:h-[40px] flex items-center justify-center border-solid rounded-xl border-[#000000] border-2 p-2 max-[382px]:w-[35px] max-[382px]:h-[35px]"
       >
@@ -89,7 +89,7 @@
       </a>
 
       <a
-        href="https://github.com/ssant0"
+        href={socialLinks.github}
         target="_blank"
         class="transition-colors duration-300 w-[50px] h-[50px] max-[800px]:w-[40px] max-[800px]:h-[40px] flex items-center justify-center border-solid rounded-xl border-[#000000] border-2 p-2 max-[382px]:w-[35px] max-[382px]:h-[35px]"
       >
@@ -109,8 +109,8 @@
   </div>
 
   <a
-    href="mailto:manuel.s@labstudiomedia.com"
-    class="lets-talk rounded-full bg-[#2d5d54] hover:bg-[#2c7c6e] hover:scale-105 transition-all text-white px-6 py-2 mt-36 animate__animated animate__fadeInUp animate__delay-5s flex gap-2 items-center
+    href={`mailto:${socialLinks.email}`}
+    class="lets-talk rounded-xl bg-[#2d5d54] hover:bg-[#2c7c6e] hover:scale-105 transition-all text-white px-6 py-3 mt-36 animate__animated animate__fadeInUp animate__delay-5s flex gap-2 items-center
   max-[660px]:px-4
   max-[660px]:mt-24"
   >
