@@ -1,0 +1,33 @@
+---
+import { technologies } from "../../../data/technologies";
+---
+
+<div
+  id="technologies"
+  class="flex flex-col items-center justify-center mt-52 max-[660px]:mt-30"
+>
+  <h1
+    class="pt-1 text-6xl text-center rubik max-[800px]:text-5xl max-[660px]:text-4xl max-[382px]:text-3xl animate__animated animate__fast animate-on-view max-[460px]:px-4"
+    data-aov-animation="animate__zoomIn"
+  >
+    Tecnologías
+  </h1>
+
+  <div class="pt-12 flex items-center justify-center w-full px-4">
+    <div
+      class="w-[1180px] flex items-center justify-center flex-wrap gap-8
+    max-[1225px]:w-[780px] max-[820px]:w-[580px] max-[820px]:justify-center max-[660px]:w-full"
+    >
+      {
+        technologies.map((tech) => (
+          <div class="group flex flex-col items-center justify-center gap-4 p-6 w-38 h-32 sm:w-44 sm:h-44 cursor-default animate__fast animate-on-view animation-forwards animate__animated" data-aov-animation="animate__zoomIn">
+            <div set:html={tech.icon} />
+            <span class="transition-colors duration-300 text-lg font-medium text-black/80 group-hover:text-black rubik text-center">
+              {tech.name}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
