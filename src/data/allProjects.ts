@@ -1,46 +1,141 @@
-
-import cucii from "../assets/img/clients/cucii.png";
-import labstudiomedia from "../assets/img/clients/labstudiomedia.png";
-import cocinasmodulares from "../assets/img/clients/cocinasmodulares.png";
-import cybercafe10m from "../assets/img/clients/cybercafe10m.png";
+import cucii from "../assets/img/cucii.png";
+import labstudiomedia from "../assets/img/labstudiomedia.png";
+import cocinasmodulares from "../assets/img/cocinasmodulares.png";
+import cybercafe10m from "../assets/img/cybercafe10m.png";
+import cuciiOnline from "../assets/img/cucii-online.png";
 import type { Project } from "../types/Project";
 
 export const allProjects: Project[] = [
   {
     title: "labstudiomedia.com",
-    longDescription: "Desarrollo del sitio web para la agencia de marketing digital Labstudiomedia. El objetivo era crear un portafolio visualmente atractivo que mostrara sus servicios. Trabajé con Astro y TypeScript junto con Bootstrap, el objetivo era destacar los servicios y ser la puerta de entrada para nuevos clientes.",
-    shortDescription: "Labstudiomedia es una agencia de marketing digital que ofrece servicios de Desarrollo web, fotografía y diseño gráfico.",
+    longDescription:
+      "Sitio web corporativo para agencia de marketing digital Labstudiomedia. Implementé arquitectura moderna con Astro y TypeScript para máximo rendimiento, configuré infraestructura completa en Cloudflare (dominio + CDN + Pages) y optimicé SEO con Google Analytics. Colaboré con equipo de diseño para crear portafolio visual atractivo que genera leads cualificados.",
+    shortDescription:
+      "Agencia de marketing digital desarrollada con Astro + TypeScript, desplegada en Cloudflare Pages con CDN global y optimización SEO.",
     image: labstudiomedia,
     liveLink: "https://labstudiomedia.com/",
-    technologies: ["Astro", "TypeScript", "Bootstrap", "CSS", "Google analytics", "AOS"],
-    keywords: ["Astro", "TypeScript", "Bootstrap", "CSS", "Google analytics", "AOS", "SEO", "Agencia", "Marketing", "Digital", "Diseño", "Web", "Visual", "Landing Page"],
-    repoLink: "https://github.com/ssant0/labstudio-landing"
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Bootstrap",
+      "CSS",
+      "Google Analytics",
+      "AOS",
+      "Cloudflare Pages",
+    ],
+    keywords: [
+      "Astro",
+      "TypeScript",
+      "Bootstrap",
+      "CSS",
+      "Google Analytics",
+      "AOS",
+      "Cloudflare",
+      "CDN",
+      "Performance",
+      "Domain Management",
+      "SEO",
+      "Marketing Digital",
+      "Agencia",
+      "Diseño Web",
+      "Full-stack",
+    ],
+    repoLink: "https://github.com/ssant0/labstudio-landing",
   },
   {
     title: "cocinasmodulares.com.mx",
-    longDescription: "Cocinas modulares es una empresa familiar con sede en Los Mochis, Sinaloa. Contactaron conmigo y concretamos una serie de reuniones tanto para levantar requisitos como validar la idea del sitio que querían, finalmente se desarrollo el sitio con HTML, CSS y JavaScript, el objetivo era crear un sitio que mostrara imágenes profesionales asi que colabore con un equipo de fotografía y optimize las imágenes para su uso en la pagina, configure los dominios y los apoye configurando cuentas de correo empresarial ademas del hosting para el despliegue de la pagina web.",
-    shortDescription: "Cocinas Modulares es una empresa que ofrece servicios de diseño y fabricación de cocinas modulares para hogares y negocios.",
+    longDescription:
+      "Proyecto completo para empresa familiar de cocinas modulares en Los Mochis. Desarrollé sitio con HTML/CSS/JavaScript vanilla, gestioné configuración completa (dominio + hosting + email empresarial) y optimicé imágenes profesionales colaborando con equipo de fotografía. Implementé diseño responsive enfocado en elegancia y conversión de clientes.",
+    shortDescription:
+      "Sitio corporativo para empresa de cocinas modulares con desarrollo vanilla, configuración completa de hosting y optimización de imágenes.",
     image: cocinasmodulares,
     liveLink: "https://cocinasmodulares.mx/",
     technologies: ["HTML", "CSS", "JavaScript"],
-    keywords: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO", "Elegancia", "Cocinas", "Cocinas Modulares", "Sinaloa", "Fotografía", "Web", "Hosting", "Correo Empresarial", "Dominio"]
+    keywords: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "SEO",
+      "Image Optimization",
+      "Domain Management",
+      "Hosting",
+      "Email Configuration",
+      "Cocinas Modulares",
+      "E-commerce",
+      "Full-stack",
+    ],
   },
   {
     title: "cybercafe10m.com",
-    longDescription: "Cybercafe10m es un cyber el cual presta servicios de apoyo en tramites y documentos para personas con dudas o necesidad de concretar tramites pesados sin mucho esfuerzo, necesitaban mostrar su existencia en linea contactaron conmigo y concretamos un diseño, en este caso colabore con su equipo de diseñadores gráficos para crear un diseño atractivo y moderno implementando diseños echos por ellos y utilize la API de google maps para personalizar un poco los mapas con sus ubicaciones.",
-    shortDescription: "Cybercafe10m es un cybercafe que ofrece servicios de internet, ayuda en documentación y orientación en trámites para los usuarios.",
+    longDescription:
+      "Proyecto de modernización completa para cybercafe10m. Migré de vanilla JavaScript a Astro para mejorar rendimiento y mantenibilidad, implementé diseño responsive con Bootstrap 5, integré API de Google Maps personalizada y configuré hosting en Cloudflare Pages. Colaboré con equipo de diseño gráfico para crear interfaz moderna que facilita servicios de documentación y trámites.",
+    shortDescription:
+      "Modernización de cybercafe con migración vanilla → Astro, integración Google Maps API y hosting Cloudflare Pages.",
     image: cybercafe10m,
     liveLink: "https://cybercafe10m.com/",
-    technologies: ["React", "Firebase", "Styled Components"],
-    keywords: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO", "Cybercafe", "Sinaloa", "Web", "Hosting", "Dominio"]
+    technologies: ["Astro", "Bootstrap 5", "CSS", "Google Maps API", "Cloudflare Pages"],
+    keywords: [
+      "Astro",
+      "Bootstrap 5",
+      "CSS",
+      "Google Maps API",
+      "Cloudflare Pages",
+      "Modernization",
+      "Migration",
+      "Performance",
+      "Cybercafe",
+      "Sinaloa",
+      "Full-stack",
+    ],
   },
   {
     title: "cucii.mx",
-    longDescription: "El Centro Universitario de Ciencias e Investigación (CUCII) es una universidad privada con sede en Sinaloa. En este proyecto, mi rol fue desarrollar el front-end completo utilizando HTML, CSS y JavaScript, enfocándome en una experiencia de usuario fluida y un rendimiento óptimo. Se implementó un diseño responsive que fue entregado por el cliente basándose en una plantilla y posteriormente se trabajo sobre esa plantilla todos los cambios solicitados por el cliente al a medida.",
-    shortDescription: "Cucii es una universidad privada con sede en Sinaloa que ofrece programas de formación profesional en áreas como educación, economía y derecho.",
+    longDescription:
+      "Desarrollo front-end completo para universidad privada CUCII. Migré de vanilla JavaScript a arquitectura Astro + Bootstrap 5 para mejor mantenibilidad, adapté plantilla existente según requerimientos del cliente e implementé cambios iterativos basados en feedback. Optimicé rendimiento y accesibilidad para estudiantes y personal académico.",
+    shortDescription:
+      "Sitio universitario desarrollado con Astro + Bootstrap 5, adaptación de plantilla existente y optimización para experiencia de usuario.",
     image: cucii,
     liveLink: "https://cucii.mx/",
-    technologies: ["HTML", "CSS", "JavaScript", "Google Fonts"],
-    keywords: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO", "Accessibility", "Educación", "Universidad", "Sinaloa"]
-  }
+    technologies: ["Astro", "Bootstrap 5", "CSS", "Google Fonts"],
+    keywords: [
+      "Astro",
+      "Bootstrap 5",
+      "CSS",
+      "Google Fonts",
+      "Template Adaptation",
+      "Client Communication",
+      "Iterative Development",
+      "Education",
+      "University",
+      "Responsive Design",
+      "SEO",
+    ],
+  },
+  {
+    title: "cucii.online",
+    longDescription:
+      "Despliegue completo de plataforma educativa LMS Moodle para CUCII. Configuré servidor VPS Ubuntu con Apache, implementé seguridad SSL con Let's Encrypt y scripts de auto-renovación, y administro mantenimiento continuo vía SSH. Solución integral que sirve a miles de estudiantes con alta disponibilidad y seguridad.",
+    shortDescription:
+      "Plataforma LMS Moodle con administración VPS, configuración SSL auto-renovable y mantenimiento vía SSH.",
+    image: cuciiOnline,
+    liveLink: "https://aula.cucii.mx/",
+    technologies: ["Moodle", "Ubuntu", "Apache", "Let's Encrypt", "SSH"],
+    keywords: [
+      "Moodle",
+      "LMS",
+      "VPS",
+      "Ubuntu",
+      "Apache",
+      "SSL",
+      "Let's Encrypt",
+      "SSH",
+      "Server Administration",
+      "Linux",
+      "DevOps",
+      "Education",
+      "Platform Management",
+      "Security",
+    ],
+  },
 ];

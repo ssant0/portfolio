@@ -1,6 +1,7 @@
 
 .astro
 .vscode
+dist/
 
 # dependencies
 node_modules/
