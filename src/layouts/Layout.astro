@@ -50,6 +50,13 @@ const {
         background-color: #f1f2f5;
         background: linear-gradient(170deg, #daeee9 0%, #f1f2f5 14%) fixed;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate__animated {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0.01ms !important;
+      }
+    }
 </style>
 
 <script>
