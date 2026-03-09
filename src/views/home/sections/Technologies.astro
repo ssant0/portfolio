@@ -6,23 +6,25 @@ import { technologies } from "../../../data/technologies";
   id="technologies"
   class="flex flex-col items-center justify-center mt-52 max-[660px]:mt-30"
 >
-  <h1
+  <h2
     class="pt-1 text-6xl text-center rubik max-[800px]:text-5xl max-[660px]:text-4xl max-[382px]:text-3xl animate__animated animate__fast animate-on-view max-[460px]:px-4"
     data-aov-animation="animate__zoomIn"
   >
     Tecnologías
-  </h1>
+  </h2>
 
   <div class="pt-12 flex items-center justify-center w-full px-4">
     <div
-      class="w-[1180px] flex items-center justify-center flex-wrap gap-8
+      class="w-[1180px] flex items-center justify-center flex-wrap gap-5
     max-[1225px]:w-[780px] max-[820px]:w-[580px] max-[820px]:justify-center max-[660px]:w-full"
     >
       {
         technologies.map((tech) => (
-          <div class="group flex flex-col items-center justify-center gap-4 p-6 w-38 h-32 sm:w-44 sm:h-44 cursor-default animate__fast animate-on-view animation-forwards animate__animated" data-aov-animation="animate__zoomIn">
-            <div set:html={tech.icon} />
-            <span class="transition-colors duration-300 text-lg font-medium text-black/80 group-hover:text-black rubik text-center">
+          <div class="group flex flex-col items-center justify-center gap-3 p-6 w-36 h-36 sm:w-40 sm:h-40 cursor-default animate__fast animate-on-view animation-forwards animate__animated bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#2d5d54]/20 transition-all duration-300" data-aov-animation="animate__zoomIn">
+            <div class="transition-transform duration-300 group-hover:scale-110">
+              <div set:html={tech.icon} />
+            </div>
+            <span class="transition-colors duration-300 text-sm font-medium text-black/70 group-hover:text-[#2d5d54] rubik text-center leading-tight">
               {tech.name}
             </span>
           </div>
