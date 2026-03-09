@@ -55,4 +55,10 @@ const {
 <script>
   import { startAnimateOnView } from '../scripts/animate-on-view';
   startAnimateOnView();
+
+  // Prevent browser from restoring scroll position on page load/reload
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
 </script>

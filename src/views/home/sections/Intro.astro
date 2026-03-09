@@ -4,12 +4,12 @@ import { socialLinks } from "../../../data/socialLinks";
 
 <div
   id="intro"
-  class="flex flex-col items-center justify-center mt-32 animate__animated animate__zoomIn animate__delay-3s animate__fast
+  class="flex flex-col items-center justify-center mt-44 animate__animated animate__zoomIn animate__delay-3s animate__fast
   w-[860px] max-[1080px]:w-[700px]
   max-[800px]:w-[580px]
-  max-[800px]:mt-32
+  max-[800px]:mt-40
   max-[660px]:w-[500px]
-  max-[660px]:mt-24
+  max-[660px]:mt-28
   max-[550px]:w-[400px]
   max-[440px]:w-[350px]
   max-[382px]:w-[300px]"
@@ -102,9 +102,9 @@ import { socialLinks } from "../../../data/socialLinks";
         </svg>
       </div>
     </a>
-    <a
-      href="#recent-projects"
-      class="cta-secondary rounded-xl border-2 border-[#2d5d54] text-[#2d5d54] hover:bg-[#2d5d54] hover:text-white transition-all px-7 py-3 flex gap-2 items-center max-[660px]:px-5"
+    <button
+      id="btn-ver-proyectos"
+      class="cta-secondary rounded-xl border-2 border-[#2d5d54] text-[#2d5d54] hover:bg-[#2d5d54] hover:text-white transition-all px-7 py-3 flex gap-2 items-center max-[660px]:px-5 cursor-pointer"
     >
       <span class="text-lg max-[660px]:text-base max-[382px]:text-sm">Ver proyectos</span>
       <div class="w-5 h-5">
@@ -112,7 +112,7 @@ import { socialLinks } from "../../../data/socialLinks";
           <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
         </svg>
       </div>
-    </a>
+    </button>
   </div>
 </div>
 
@@ -133,3 +133,9 @@ import { socialLinks } from "../../../data/socialLinks";
     box-shadow: 0 0 0 6px rgba(45, 93, 84, 0.12), 0 4px 20px rgba(45, 93, 84, 0.2);
   }
 </style>
+
+<script>
+  document.getElementById('btn-ver-proyectos')?.addEventListener('click', () => {
+    document.getElementById('recent-projects')?.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
