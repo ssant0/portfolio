@@ -136,6 +136,9 @@ import { socialLinks } from "../../../data/socialLinks";
 
 <script>
   document.getElementById('btn-ver-proyectos')?.addEventListener('click', () => {
-    document.getElementById('recent-projects')?.scrollIntoView({ behavior: 'smooth' });
+    const target = document.getElementById('recent-projects');
+    if (target) {
+      window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+    }
   });
 </script>
