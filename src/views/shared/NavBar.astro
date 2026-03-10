@@ -52,8 +52,6 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry);
-
         links.forEach((l) => l.classList.remove("active"));
         if (entry.target === intro) {
           links[0].classList.add("active");

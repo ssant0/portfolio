@@ -5,13 +5,43 @@ import Technologies from "../views/home/sections/Technologies.astro";
 import RecentProjects from "../views/home/sections/RecentProjects.astro";
 import Contact from "../views/shared/Contact.astro";
 import NavBar from "../views/shared/NavBar.astro";
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.manuelsamaniego.com.mx/#person",
+      "name": "Manuel Samaniego",
+      "url": "https://www.manuelsamaniego.com.mx/",
+      "jobTitle": "Desarrollador Web",
+      "description": "Desarrollador web especializado en sitios web y aplicaciones a medida para pymes en México.",
+      "areaServed": { "@type": "AdministrativeArea", "name": "México" },
+      "address": { "@type": "PostalAddress", "addressRegion": "Sinaloa", "addressCountry": "MX" },
+      "sameAs": [
+        "https://www.linkedin.com/in/manuel-samaniego/",
+        "https://github.com/ssant0",
+        "https://www.instagram.com/ssamanieg0_"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.manuelsamaniego.com.mx/#website",
+      "url": "https://www.manuelsamaniego.com.mx/",
+      "name": "Manuel Samaniego — Desarrollador Web para Pymes",
+      "description": "Portafolio de Manuel Samaniego, desarrollador web especializado en páginas web profesionales para pymes en México.",
+      "publisher": { "@id": "https://www.manuelsamaniego.com.mx/#person" },
+      "inLanguage": "es-MX"
+    }
+  ]
+});
 ---
 
 <Layout
-  title="Manuel Samaniego | Desarrollador Web"
-  metaTitle="Manuel Samaniego - Desarrollador Web Portafolio"
-  description="Soy un desarrollador web especializado en aplicaciones a medida y sitios web para pymes. Diseño responsive, rendimiento óptimo y mantenimiento continuo."
-  keywords="full-stack developer, web development, software engineer, angular, node.js, javascript, portfolio, web developer, software developer, freelancer, landing pages, desarrollo web, desarrollador freelance, sitios web para negocios, páginas web personalizadas, diseño web, desarrollador web México, programación a medida, soluciones digitales, desarrollo para pymes, diseño responsivo, frontend developer, backend developer, mantenimiento web, contacta desarrollador web, desarrollo web freelance, programador web"
+  title="Páginas Web para Pymes en México | Manuel Samaniego"
+  description="Desarrollo web para pymes en México. Páginas web profesionales con diseño responsivo, rendimiento óptimo y acompañamiento continuo. Sinaloa y todo México."
+  keywords="páginas web para empresas México, desarrollo web para pymes, desarrollo web Sinaloa, diseño web para negocios, páginas web profesionales, Manuel Samaniego desarrollador web"
+  schema={schema}
 >
   <NavBar />
   <main class="relative z-10 flex justify-center flex-col items-center">
