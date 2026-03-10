@@ -21,7 +21,7 @@ import { technologies } from "../../../data/technologies";
     >
       {
         technologies.map((tech) => (
-          <div class="group flex flex-col items-center justify-center gap-3 p-6 w-36 h-36 sm:w-40 sm:h-40 cursor-default animate__fast animate-on-view animation-forwards animate__animated bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#2d5d54]/20 transition-all duration-300" data-aov-animation="animate__zoomIn">
+          <div class="group flex flex-col items-center justify-center gap-3 p-4 w-36 h-36 sm:w-40 sm:h-40 cursor-default animate__fast animate-on-view animation-forwards animate__animated bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#2d5d54]/20 transition-all duration-300" data-aov-animation="animate__zoomIn">
             <div class="transition-transform duration-300 group-hover:scale-110">
               <div set:html={tech.icon} />
             </div>
