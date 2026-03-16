@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+/* ─── Animate.css self-hosted — solo zoomIn y fadeInUp se usan ─── */
+:root { --animate-delay: 0.2s; }
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__fast {
+  animation-duration: 0.5s;
+}
+
+.animate__delay-1s { animation-delay: var(--animate-delay); }
+.animate__delay-2s { animation-delay: calc(var(--animate-delay) * 2); }
+.animate__delay-3s { animation-delay: calc(var(--animate-delay) * 3); }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% { opacity: 1; }
+}
+.animate__zoomIn { animation-name: zoomIn; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInUp { animation-name: fadeInUp; }
+
+/* ─────────────────────────────────────────────────────────────── */
+
 .media-links a {
   border-color: #2d5d54;
   fill: #2d5d54;

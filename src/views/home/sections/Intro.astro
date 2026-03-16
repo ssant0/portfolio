@@ -4,7 +4,7 @@ import { socialLinks } from "../../../data/socialLinks";
 
 <div
   id="intro"
-  class="flex flex-col items-center justify-center mt-22 animate__animated animate__zoomIn animate__delay-1s animate__fast
+  class="flex flex-col items-center justify-center mt-22
   w-[860px] max-[1080px]:w-[700px]
   max-[800px]:w-[580px]
   max-[660px]:w-[500px]
@@ -101,9 +101,10 @@ import { socialLinks } from "../../../data/socialLinks";
         </svg>
       </div>
     </a>
-    <button
+    <a
+      href="#recent-projects"
       id="btn-ver-proyectos"
-      class="cta-secondary rounded-xl border-2 border-[#2d5d54] text-[#2d5d54] hover:bg-[#2d5d54] hover:text-white transition-all px-7 py-3 flex gap-2 items-center max-[660px]:px-5 cursor-pointer"
+      class="cta-secondary rounded-xl border-2 border-[#2d5d54] text-[#2d5d54] hover:bg-[#2d5d54] hover:text-white transition-all px-7 py-3 flex gap-2 items-center max-[660px]:px-5"
     >
       <span class="text-lg max-[660px]:text-base max-[382px]:text-sm">Ver proyectos</span>
       <div class="w-5 h-5">
@@ -111,7 +112,7 @@ import { socialLinks } from "../../../data/socialLinks";
           <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
         </svg>
       </div>
-    </button>
+    </a>
   </div>
 </div>
 
@@ -134,7 +135,8 @@ import { socialLinks } from "../../../data/socialLinks";
 </style>
 
 <script>
-  document.getElementById('btn-ver-proyectos')?.addEventListener('click', () => {
+  document.getElementById('btn-ver-proyectos')?.addEventListener('click', (e) => {
+    e.preventDefault();
     const target = document.getElementById('recent-projects');
     if (target) {
       window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
