@@ -33,9 +33,9 @@ const currentYear = new Date().getFullYear();
       <div>
         <h3 class="text-lg text-white mb-2">Navegación</h3>
         <ul class="flex flex-col gap-1 text-sm">
-          <li><a href="/#intro" class="hover:text-white transition-colors">Inicio</a></li>
-          <li><a href="/#recent-projects" class="hover:text-white transition-colors">Proyectos</a></li>
-          <li><a href="/#contact" class="hover:text-white transition-colors">Contacto</a></li>
+          <li><a href="/#intro" data-scroll="intro" class="hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="/#recent-projects" data-scroll="recent-projects" class="hover:text-white transition-colors">Proyectos</a></li>
+          <li><a href="/#contact" data-scroll="contact" class="hover:text-white transition-colors">Contacto</a></li>
         </ul>
       </div>
       <div>
@@ -129,3 +129,15 @@ const currentYear = new Date().getFullYear();
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>("[data-scroll]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const target = document.getElementById(link.dataset.scroll!);
+      if (!target) return;
+      e.preventDefault();
+      const top = link.dataset.scroll === "intro" ? 0 : target.offsetTop;
+      window.scrollTo({ top, behavior: "smooth" });
+    });
+  });
+</script>
