@@ -1,6 +1,6 @@
 # Portfolio — Manuel Samaniego
 
-Astro 5 + Tailwind CSS 4 static site. Personal portfolio targeting SME clients.
+Astro 6 + Tailwind CSS 4 static site. Personal portfolio targeting SME clients.
 
 ## Commands
 
@@ -14,8 +14,8 @@ npm run preview  # Preview production build locally
 
 ```
 src/
-  layouts/       # Layout.astro — html shell, fonts, animate.css, footer
-  pages/         # index.astro, projects/[project].astro, 404.astro
+  layouts/       # Layout.astro — html shell, fonts, animate.css, GA4, footer
+  pages/         # index.astro, projects/[project].astro, 404.astro, aviso-de-privacidad.astro
   views/
     home/
       sections/  # Intro, RecentProjects, Technologies (full-page sections)
@@ -59,6 +59,14 @@ public/
 
 **New technology** — add entry to `src/data/technologies.ts` with `name` and inline SVG `icon`.
 
+## Analytics
+
+Google Analytics 4 (`G-G40F72XVS0`) is injected as the first element in `<head>` inside `Layout.astro`. Active since 2026-03-23.
+
+## Legal
+
+`/aviso-de-privacidad` — LFPDPPP-compliant privacy notice (persona física, Los Mochis Sinaloa). Update `lastUpdated` + sections II, III, V, VII whenever GA config or third-party services change.
+
 ## Gotchas
 
 - **Astro `Image` + `inferSize`** injects inline `width`/`height`, overriding CSS height. Fix: `relative` on wrapper + `absolute inset-0 w-full h-full object-cover` on the image.
@@ -66,3 +74,4 @@ public/
 - **`prefers-reduced-motion`** is handled in `Layout.astro` `<style>` block (not global.css).
 - **`animate-on-view`** only triggers once per element (no re-trigger on scroll up).
 - Scroll restoration is disabled on page load (`history.scrollRestoration = 'manual'`).
+- **Footer nav smooth scroll** — links use `data-scroll="<section-id>"` + a script in `Footer.astro`. "Inicio" scrolls to `top: 0`; others use `offsetTop`. The `href` fallback handles cross-page navigation (e.g. from `/aviso-de-privacidad`).
